@@ -1,5 +1,8 @@
 package com.alphawallet.app.service;
 
+import static com.alphawallet.app.service.CryptoUpdateService.LOCATION.FINAL;
+import static xyz.automatons.cryptowidget.CryptoUpdateService.LOCATION.FINAL;
+
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -14,22 +17,22 @@ import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
-import androidx.annotation.Nullable;
-import androidx.core.app.NotificationCompat;
-
 import android.view.View;
 import android.widget.RemoteViews;
 
-import io.reactivex.disposables.Disposable;
-import io.reactivex.schedulers.Schedulers;
-import xyz.automatons.cryptowidget.web.CoinData;
-import xyz.automatons.cryptowidget.web.WebQuery;
-import xyz.automatons.cryptowidget.widget.WidgetProvider;
-
-import static xyz.automatons.cryptowidget.CryptoUpdateService.LOCATION.FINAL;
+import androidx.annotation.Nullable;
+import androidx.core.app.NotificationCompat;
 
 import com.alphawallet.app.R;
+import com.alphawallet.app.entity.tickerwidget.CoinData;
 import com.alphawallet.app.entity.tickerwidget.CoinList;
+import com.alphawallet.app.entity.tickerwidget.WebQuery;
+import com.alphawallet.app.entity.tickerwidget.WidgetProvider;
+import com.alphawallet.app.util.Utils;
+import com.alphawallet.app.widget.CryptoWidget;
+
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
 
 /**
  * Created by James on 24/09/2017.
@@ -100,7 +103,7 @@ public class CryptoUpdateService extends Service
     public void onCreate()
     {
         super.onCreate();
-        Util.scheduleJob(getApplicationContext()); //ensure we always start
+        Utils.scheduleJob(getApplicationContext()); //ensure we always start
         if (Build.VERSION.SDK_INT >= 26)
         {
             String CHANNEL_ID = "my_channel_01";
@@ -157,7 +160,7 @@ public class CryptoUpdateService extends Service
                     .subscribe(this::updateWidgets, this::onAPIError);
         }
 
-        Util.scheduleJob(this);
+        Utils.scheduleJob(this);
     }
 
     private void onAPIError(Throwable error)
@@ -194,17 +197,17 @@ public class CryptoUpdateService extends Service
                 String cryptoName = CoinList.getCryptoName(cryptoStr);
 
                 //Restart app if widget clicked outside of the box, keeping track of which widget was clicked
-                Intent resultIntent = new Intent(this, MainActivity.class);
+                Intent resultIntent = new Intent(this, CryptoWidget.class);
                 resultIntent.setAction("startWidget" + widgetId);
                 resultIntent.putExtra("id", widgetId);
                 resultIntent.setFlags(widgetId);
                 TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
-                stackBuilder.addParentStack(MainActivity.class);
+                stackBuilder.addParentStack(CryptoWidget.class);
                 stackBuilder.addNextIntent(resultIntent);
                 PendingIntent rPI = stackBuilder.getPendingIntent(key.hashCode(), PendingIntent.FLAG_UPDATE_CURRENT);
 
                 RemoteViews remoteViews = new RemoteViews(getApplicationContext().getPackageName(),
-                        R.layout.widget_crypto);
+                        R.layout.ticker_widget);
                 // Set the text
                 String truncValue = String.format(java.util.Locale.US, "%.2f", currentCrypto);
 
