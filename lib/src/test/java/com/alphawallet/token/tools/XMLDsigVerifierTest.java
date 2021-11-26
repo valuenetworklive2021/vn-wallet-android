@@ -22,7 +22,7 @@ public class XMLDsigVerifierTest {
 //        InputStream DAIToken = new FileInputStream("src/test/ts/DAI.tsml");
 //        XMLDsigVerificationResult result = new XMLDSigVerifier().VerifyXMLDSig(DAIToken);
 //        assert(result.isValid);
-//        assert(result.subjectPrincipal.equals("CN=*.aw.app"));
+//        assert(result.subjectPrincipal.equals("CN=*.vnw.app"));
 //    }
 
 /* removing the following test as they likely to have failed for outdated certificate
@@ -32,7 +32,7 @@ public class XMLDsigVerifierTest {
         InputStream fileTS = new FileInputStream("src/test/ts/EntryToken-valid-RSA.tsml");
         XMLDsigVerificationResult result = new XMLDSigVerifier().VerifyXMLDSig(fileTS);
         assert(result.isValid);
-        assert(result.subjectPrincipal.equals("CN=aw.app"));
+        assert(result.subjectPrincipal.equals("CN=vnw.app"));
     }
 */
 

@@ -1011,7 +1011,7 @@ public class AssetDefinitionService implements ParseResult, AttributeInterface
                         .url(sb.toString())
                         .get()
                         .addHeader("Accept", "text/xml; charset=UTF-8")
-                        .addHeader("X-Client-Name", "AlphaWallet")
+                        .addHeader("X-Client-Name", "VN Wallet")
                         .addHeader("X-Client-Version", appVersion)
                         .addHeader("X-Platform-Name", "Android")
                         .addHeader("X-Platform-Version", OSVersion)
@@ -1097,8 +1097,8 @@ public class AssetDefinitionService implements ParseResult, AttributeInterface
                     XMLDsigDescriptor AWSig = new XMLDsigDescriptor();
                     String hash = tsf.calcMD5();
                     AWSig.result = "pass";
-                    AWSig.issuer = "AlphaWallet";
-                    AWSig.keyName = "AlphaWallet";
+                    AWSig.issuer = "VN Wallet";
+                    AWSig.keyName = "VN Wallet";
                     AWSig.type = SigReturnType.SIGNATURE_PASS;
                     tsf.determineSignatureType(AWSig);
                     storeCertificateData(hash, AWSig);

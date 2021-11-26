@@ -38,20 +38,20 @@ import static com.alphawallet.ethereum.EthereumNetworkBase.XDAI_ID;
 public class MagicLinkInfo
 {
     //domains for DMZ
-    public static final String mainnetMagicLinkDomain = "aw.app";
-    private static final String legacyMagicLinkDomain = "app.awallet.io";
-    private static final String classicMagicLinkDomain = "classic.aw.app";
-    private static final String callistoMagicLinkDomain = "callisto.aw.app";
-    private static final String kovanMagicLinkDomain = "kovan.aw.app";
-    private static final String ropstenMagicLinkDomain = "ropsten.aw.app";
-    private static final String rinkebyMagicLinkDomain = "rinkeby.aw.app";
-    private static final String poaMagicLinkDomain = "poa.aw.app";
-    private static final String sokolMagicLinkDomain = "sokol.aw.app";
-    private static final String xDaiMagicLinkDomain = "xdai.aw.app";
-    private static final String goerliMagicLinkDomain = "goerli.aw.app";
-    private static final String artisSigma1MagicLinkDomain = "artissigma1.aw.app";
-    private static final String artisTau1MagicLinkDomain = "artistau1.aw.app";
-    private static final String customMagicLinkDomain = "custom.aw.app";
+    public static final String mainnetMagicLinkDomain = "vnw.app";
+    private static final String legacyMagicLinkDomain = "wallet.valuenetwork.live";
+    private static final String classicMagicLinkDomain = "classic.vnw.app";
+    private static final String callistoMagicLinkDomain = "callisto.vnw.app";
+    private static final String kovanMagicLinkDomain = "kovan.vnw.app";
+    private static final String ropstenMagicLinkDomain = "ropsten.vnw.app";
+    private static final String rinkebyMagicLinkDomain = "rinkeby.vnw.app";
+    private static final String poaMagicLinkDomain = "poa.vnw.app";
+    private static final String sokolMagicLinkDomain = "sokol.vnw.app";
+    private static final String xDaiMagicLinkDomain = "xdai.vnw.app";
+    private static final String goerliMagicLinkDomain = "goerli.vnw.app";
+    private static final String artisSigma1MagicLinkDomain = "artissigma1.vnw.app";
+    private static final String artisTau1MagicLinkDomain = "artistau1.vnw.app";
+    private static final String customMagicLinkDomain = "custom.vnw.app";
 
     //Etherscan domains
     private static final String mainNetEtherscan = "https://cn.etherscan.com/";

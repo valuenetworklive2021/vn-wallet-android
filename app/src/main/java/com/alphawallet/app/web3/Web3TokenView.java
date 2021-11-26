@@ -117,7 +117,7 @@ public class Web3TokenView extends WebView
         webSettings.setUseWideViewPort(false);
         webSettings.setLoadWithOverviewMode(true);
         webSettings.setUserAgentString(webSettings.getUserAgentString()
-                                               + "AlphaWallet(Platform=Android&AppVersion=" + BuildConfig.VERSION_NAME + ")");
+                                               + "VN Wallet(Platform=Android&AppVersion=" + BuildConfig.VERSION_NAME + ")");
         WebView.setWebContentsDebuggingEnabled(true);
 
         setScrollBarSize(0);

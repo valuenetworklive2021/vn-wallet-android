@@ -34,7 +34,7 @@ Java_com_alphawallet_app_repository_EthereumNetworkBase_getInfuraKey( JNIEnv* en
 #elif (HAS_INFURA == 1)
     return (*env)->NewStringUTF(env, IFKEY);
 #else
-    const jstring key = "da3717f25f824cc1baa32d812386d93f";
+    const jstring key = "30f56e835009477f967be5bbea3e69ad";
     return (*env)->NewStringUTF(env, key);
 #endif
 }
@@ -102,7 +102,7 @@ Java_com_alphawallet_app_repository_EthereumNetworkBase_getSecondaryInfuraKey( J
 #elif (HAS_INFURA == 1)
     return (*env)->NewStringUTF(env, IFKEY);
 #else
-    const jstring key = "da3717f25f824cc1baa32d812386d93f";
+    const jstring key = "30f56e835009477f967be5bbea3e69ad";
     return (*env)->NewStringUTF(env, key);
 #endif
 }
@@ -113,7 +113,7 @@ Java_com_alphawallet_app_service_TransactionsNetworkClient_getBSCExplorerKey( JN
 #if (HAS_KEYS == 1)
     return getBSCExplorerKey(env);
 #else
-    return (*env)->NewStringUTF(env, "");
+    return (*env)->NewStringUTF(env, "MTD6U2VK6S1QYK9VFAZ86G2N9EH2BBY7Z2");
 #endif
 }
 
@@ -123,7 +123,7 @@ Java_com_alphawallet_app_service_TransactionsNetworkClient_getEtherscanKey( JNIE
 #if (HAS_KEYS == 1)
     return getDecryptedKey(env, etherscanKey);
 #else
-    const jstring key = "6U31FTHW3YYHKW6CYHKKGDPHI9HEJ9PU5F";
+    const jstring key = "1JECQACUZVV7VQXJ93FYKE3ACX1RJ3T8DT";
     return (*env)->NewStringUTF(env, key);
 #endif
 }
@@ -134,7 +134,7 @@ Java_com_alphawallet_app_service_GasService_getEtherscanKey( JNIEnv* env, jobjec
 #if (HAS_KEYS == 1)
     return getDecryptedKey(env, etherscanKey);
 #else
-    const jstring key = "6U31FTHW3YYHKW6CYHKKGDPHI9HEJ9PU5F";
+    const jstring key = "1JECQACUZVV7VQXJ93FYKE3ACX1RJ3T8DT";
     return (*env)->NewStringUTF(env, key);
 #endif
 }

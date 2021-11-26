@@ -228,7 +228,7 @@ public abstract class C {
     public static final String DAPP_DEFAULT_URL = "https://www.stateofthedapps.com/";
     public static final String DAPP_PREFIX_TELEPHONE = "tel";
     public static final String DAPP_PREFIX_MAILTO = "mailto";
-    public static final String DAPP_PREFIX_ALPHAWALLET = "alphawallet";
+    public static final String DAPP_PREFIX_ALPHAWALLET = "vnwallet";
     public static final String DAPP_SUFFIX_RECEIVE = "receive";
     public static final String DAPP_PREFIX_MAPS = "maps.google.com/maps?daddr=";
     public static final String DAPP_PREFIX_WALLETCONNECT = "wc";
@@ -263,5 +263,5 @@ public abstract class C {
     public static final String AN_USE_ONRAMP = "Use OnRamp";
     public static final String APP_NAME = "PACKAGE_NAME";
 
-    public static final String ALPHAWALLET_LOGO_URI = "https://alphawallet.com/wp-content/themes/alphawallet/img/alphawallet-logo.svg";
+    public static final String ALPHAWALLET_LOGO_URI = "https://valuenetwork.live/favicon.png";
 }

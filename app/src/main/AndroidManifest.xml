@@ -53,51 +53,51 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="aw.app"
+                    android:host="vnw.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="classic.aw.app"
+                    android:host="classic.vnw.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="kovan.aw.app"
+                    android:host="kovan.vnw.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="ropsten.aw.app"
+                    android:host="ropsten.vnw.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="rinkeby.aw.app"
+                    android:host="rinkeby.vnw.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="poa.aw.app"
+                    android:host="poa.vnw.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="sokol.aw.app"
+                    android:host="sokol.vnw.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="xdai.aw.app"
+                    android:host="xdai.vnw.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="app.awallet.io"
+                    android:host="wallet.valuenetwork.live"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="goerli.aw.app"
+                    android:host="goerli.vnw.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="artissigma1.aw.app"
+                    android:host="artissigma1.vnw.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
                 <data
-                    android:host="artistau1.aw.app"
+                    android:host="artistau1.vnw.app"
                     android:pathPrefix="/"
                     android:scheme="https" />
             </intent-filter>

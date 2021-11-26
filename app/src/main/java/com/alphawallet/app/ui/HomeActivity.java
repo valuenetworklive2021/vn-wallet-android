@@ -142,7 +142,7 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
     @OnLifecycleEvent(Lifecycle.Event.ON_START)
     private void onMoveToForeground()
     {
-        Log.d("LIFE", "AlphaWallet into foreground");
+        Log.d("LIFE", "VN Wallet into foreground");
         if (viewModel != null) viewModel.startTransactionUpdate();
         isForeground = true;
     }
@@ -150,7 +150,7 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
     @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
     private void onMoveToBackground()
     {
-        Log.d("LIFE", "AlphaWallet into background");
+        Log.d("LIFE", "VN Wallet into background");
         if (viewModel != null) viewModel.stopTransactionUpdate();
         isForeground = false;
     }
@@ -667,7 +667,7 @@ public class HomeActivity extends BaseNavigationActivity implements View.OnClick
                 AWalletConfirmationDialog cDialog = new AWalletConfirmationDialog(this);
                 cDialog.setTitle(R.string.alphawallet_update);
                 cDialog.setCancelable(true);
-                cDialog.setSmallText("Using an old version of Alphawallet. Please update from the Play Store or Alphawallet website.");
+                cDialog.setSmallText("Using an old version of VN Wallet. Please update from the Play Store or VN Wallet website.");
                 cDialog.setPrimaryButtonText(R.string.ok);
                 cDialog.setPrimaryButtonListener(v -> {
                     cDialog.dismiss();

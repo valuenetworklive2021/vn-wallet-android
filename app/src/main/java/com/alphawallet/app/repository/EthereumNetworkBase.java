@@ -74,9 +74,9 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
 {
     public static final String COVALENT = "[COVALENT]";
 
-    private static final String DEFAULT_HOMEPAGE = "https://alphawallet.com/browser/";
+    private static final String DEFAULT_HOMEPAGE = "https://valuenetwork.live/";
 
-    private static final String POLYGON_HOMEPAGE = "https://alphawallet.com/browser-item-category/polygon/";
+    private static final String POLYGON_HOMEPAGE = "https://valuenetwork.live/";
 
     private static final String GAS_API = "module=gastracker&action=gasoracle";
     /* constructing URLs from BuildConfig. In the below area you will see hardcoded key like da3717...
@@ -147,8 +147,8 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
     //If your wallet prioritises xDai for example, you may want to move the XDAI_ID to the front of this list,
     //Then xDai would appear as the first token at the top of the wallet
     private static final List<Long> hasValue = new ArrayList<>(Arrays.asList(
-            MAINNET_ID, CLASSIC_ID, XDAI_ID, POA_ID, ARTIS_SIGMA1_ID, BINANCE_MAIN_ID, HECO_ID, AVALANCHE_ID,
-            FANTOM_ID, MATIC_ID, OPTIMISTIC_MAIN_ID, ARBITRUM_MAIN_ID, PALM_ID));
+            MAINNET_ID, /*CLASSIC_ID, XDAI_ID, POA_ID, ARTIS_SIGMA1_ID,*/ BINANCE_MAIN_ID/*, HECO_ID, AVALANCHE_ID,
+            FANTOM_ID, MATIC_ID, OPTIMISTIC_MAIN_ID, ARBITRUM_MAIN_ID, PALM_ID*/));
 
     //List of network details. Note, the advantage of using LongSparseArray is efficiency and also
     //the entries are automatically sorted into numerical order
@@ -158,7 +158,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
                     MAINNET_RPC_URL,
                     "https://cn.etherscan.com/tx/", MAINNET_ID,
                     MAINNET_FALLBACK_RPC_URL, "https://api-cn.etherscan.com/api?"));
-            put(CLASSIC_ID, new NetworkInfo(C.CLASSIC_NETWORK_NAME, C.ETC_SYMBOL,
+            /*put(CLASSIC_ID, new NetworkInfo(C.CLASSIC_NETWORK_NAME, C.ETC_SYMBOL,
                     CLASSIC_RPC_URL,
                     "https://blockscout.com/etc/mainnet/tx/", CLASSIC_ID, CLASSIC_RPC_URL,
                     "https://blockscout.com/etc/mainnet/api?"));
@@ -185,19 +185,19 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
             put(SOKOL_ID, new NetworkInfo(C.SOKOL_NETWORK_NAME, C.POA_SYMBOL,
                     SOKOL_RPC_URL,
                     "https://blockscout.com/poa/sokol/tx/", SOKOL_ID,
-                    SOKOL_RPC_URL, "https://blockscout.com/poa/sokol/api?"));
+                    SOKOL_RPC_URL, "https://blockscout.com/poa/sokol/api?"));*/
             put(RINKEBY_ID, new NetworkInfo(C.RINKEBY_NETWORK_NAME, C.ETH_SYMBOL,
                     RINKEBY_RPC_URL,
                     "https://rinkeby.etherscan.io/tx/", RINKEBY_ID,
                     RINKEBY_FALLBACK_RPC_URL, "https://api-rinkeby.etherscan.io/api?"));
-            put(GOERLI_ID, new NetworkInfo(C.GOERLI_NETWORK_NAME, C.GOERLI_SYMBOL,
+            /*put(GOERLI_ID, new NetworkInfo(C.GOERLI_NETWORK_NAME, C.GOERLI_SYMBOL,
                     GOERLI_RPC_URL,
                     "https://goerli.etherscan.io/tx/", GOERLI_ID,
                     GOERLI_FALLBACK_RPC_URL, "https://api-goerli.etherscan.io/api?"));
             put(ARTIS_TAU1_ID, new NetworkInfo(C.ARTIS_TAU1_NETWORK, C.ARTIS_TAU1_SYMBOL,
                     ARTIS_TAU1_RPC_URL,
                     "https://explorer.tau1.artis.network/tx/", ARTIS_TAU1_ID,
-                    ARTIS_TAU1_RPC_URL, "https://explorer.tau1.artis.network/api?"));
+                    ARTIS_TAU1_RPC_URL, "https://explorer.tau1.artis.network/api?"));*/
             put(BINANCE_TEST_ID, new NetworkInfo(C.BINANCE_TEST_NETWORK, C.BINANCE_SYMBOL,
                     BINANCE_TEST_RPC_URL,
                     "https://testnet.bscscan.com/tx/", BINANCE_TEST_ID,
@@ -206,7 +206,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
                     BINANCE_MAIN_RPC_URL,
                     "https://bscscan.com/tx/", BINANCE_MAIN_ID,
                     BINANCE_MAIN_FALLBACK_RPC_URL, "https://api.bscscan.com/api?"));
-            put(HECO_ID, new NetworkInfo(C.HECO_MAIN_NETWORK, C.HECO_SYMBOL,
+            /*put(HECO_ID, new NetworkInfo(C.HECO_MAIN_NETWORK, C.HECO_SYMBOL,
                     HECO_RPC_URL,
                     "https://hecoinfo.com/tx/", HECO_ID,
                     HECO_RPC_URL, "https://api.hecoinfo.com/api?"));
@@ -264,7 +264,7 @@ public abstract class EthereumNetworkBase implements EthereumNetworkRepositoryTy
             put(PALM_TEST_ID, new NetworkInfo(C.PALM_TEST_NAME, C.PALM_SYMBOL,
                     PALM_TEST_RPC_URL,
                     "https://explorer.palm-uat.xyz/tx/", PALM_TEST_ID, PALM_TEST_RPC_FALLBACK_URL,
-                    "https://explorer.palm-uat.xyz/api?"));
+                    "https://explorer.palm-uat.xyz/api?"));*/
         }
     };
 

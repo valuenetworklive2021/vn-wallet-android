@@ -35,16 +35,16 @@ android {
         }
     }
     defaultConfig {
-        versionCode 177
-        versionName "3.40.7"
+        versionCode 1
+        versionName "1.0.0"
 
-        applicationId "io.stormbird.wallet"
+        applicationId "live.valuenetwork.wallet"
         minSdkVersion 23
         targetSdkVersion 30
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         def XInfuraAPI = "XInfuraAPI"
         //Put your Infura key here, NB with over 30 - 40 users this API key will rate limit, it's only here for bootstrapping a free build
-        def DEFAULT_INFURA_API_KEY = "\"da3717f25f824cc1baa32d812386d93f\""
+        def DEFAULT_INFURA_API_KEY = "\"30f56e835009477f967be5bbea3e69ad\""
 
         buildConfigField 'int', 'DB_VERSION', '36'
         buildConfigField "String", XInfuraAPI, DEFAULT_INFURA_API_KEY

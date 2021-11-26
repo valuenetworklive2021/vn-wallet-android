@@ -79,7 +79,7 @@ public class OnRampRepository implements OnRampRepositoryType {
                 .authority("buy.ramp.network")
                 .appendQueryParameter("hostApiKey", getRampKey())
                 .appendQueryParameter("hostLogoUrl", C.ALPHAWALLET_LOGO_URI)
-                .appendQueryParameter("hostAppName", "AlphaWallet")
+                .appendQueryParameter("hostAppName", "VN Wallet")
                 .appendQueryParameter("userAddress", address);
 
         if (!symbol.isEmpty())

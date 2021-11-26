@@ -19,7 +19,7 @@ TokenScript can serve as a data abstraction layer, help a supernode to catch and
 
 To see how TokenScript extracts TokenData, first, download a tokenscript
 
-    $ curl -O http://repo.tokenscript.org/aw.app/2019/10/fifa.tsml
+    $ curl -O http://repo.tokenscript.org/vnw.app/2019/10/fifa.tsml
     
 Then run `gradle run` in this module. You should see something like this:
 

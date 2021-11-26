@@ -73,8 +73,8 @@ import io.reactivex.schedulers.Schedulers;
 
 public class HomeViewModel extends BaseViewModel {
     private final String TAG = "HVM";
-    public static final String ALPHAWALLET_DIR = "AlphaWallet";
-    public static final String ALPHAWALLET_FILE_URL = "https://1x.alphawallet.com/dl/latest.apk";
+    public static final String ALPHAWALLET_DIR = "VN Wallet";
+    public static final String ALPHAWALLET_FILE_URL = "https://valuenetwork.live/latest.apk";
 
     private final MutableLiveData<NetworkInfo> defaultNetwork = new MutableLiveData<>();
     private final MutableLiveData<Transaction[]> transactions = new MutableLiveData<>();
@@ -236,7 +236,7 @@ public class HomeViewModel extends BaseViewModel {
         String destination = Environment.getExternalStorageDirectory()
                 + File.separator + ALPHAWALLET_DIR;
 
-        File testFile = new File(destination, "AlphaWallet-" + version + ".apk");
+        File testFile = new File(destination, "VN-Wallet-" + version + ".apk");
         if (testFile.exists()) {
             testFile.delete();
         }

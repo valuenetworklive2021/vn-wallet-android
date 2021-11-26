@@ -79,7 +79,7 @@ public class AppSiteController implements AttributeInterface
             "    \"apps\": [],\n" +
             "    \"details\": [\n" +
             "      {\n" +
-            "        \"appID\": \"LRAW5PL536.com.stormbird.alphawallet\",\n" +
+            "        \"appID\": \"J4U5N6W427.live.valuenetwork.alphawallet\",\n" +
             "        \"paths\": [ \"*\" ]\n" +
             "      }\n" +
             "    ]\n" +
@@ -88,7 +88,7 @@ public class AppSiteController implements AttributeInterface
     private final MagicLinkData magicLinkData = new MagicLinkData();
     private final TokenscriptFunction tokenscriptFunction = new TokenscriptFunction() { };
     private static Path repoDir;
-    private static String infuraKey = "da3717f25f824cc1baa32d812386d93f";
+    private static String infuraKey = "30f56e835009477f967be5bbea3e69ad";
 
     @GetMapping(value = "/apple-app-site-association", produces = "application/json")
     @ResponseBody
@@ -98,7 +98,7 @@ public class AppSiteController implements AttributeInterface
 
     @GetMapping("/")
     public RedirectView home(RedirectAttributes attributes){
-        return new RedirectView("http://alphawallet.com");
+        return new RedirectView("http://valuenetwork.live");
     }
 
     @GetMapping(value = "/{UniversalLink}")
@@ -534,7 +534,7 @@ public class AppSiteController implements AttributeInterface
     2) for a test file which has valid certificates:
 
     $ curl -F 'file=@lib/src/test/ts/DAI.tsml' localhost:8080/api/v1/verifyXMLDSig
-    {"result":"pass","subject":"CN=*.aw.app","keyName":"","keyType":"SHA256withRSA","issuer":"CN=Let's Encrypt Authority X3,O=Let's Encrypt,C=US"}
+    {"result":"pass","subject":"CN=*.vnw.app","keyName":"","keyType":"SHA256withRSA","issuer":"CN=Let's Encrypt Authority X3,O=Let's Encrypt,C=US"}
 
     Client be-aware! Please handle return code 404 gracefully. It's content look like this:
 

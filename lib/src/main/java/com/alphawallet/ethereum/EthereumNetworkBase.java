@@ -38,15 +38,15 @@ public abstract class EthereumNetworkBase { // implements EthereumNetworkReposit
     public static final long PALM_TEST_ID = 0x2a15c3083L; //11297108099
 
 
-    public static final String MAINNET_RPC_URL = "https://mainnet.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
+    public static final String MAINNET_RPC_URL = "https://mainnet.infura.io/v3/30f56e835009477f967be5bbea3e69ad";
     public static final String CLASSIC_RPC_URL = "https://www.ethercluster.com/etc";
     public static final String XDAI_RPC_URL = "https://rpc.xdaichain.com";
     public static final String POA_RPC_URL = "https://core.poa.network/";
-    public static final String ROPSTEN_RPC_URL = "https://ropsten.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
-    public static final String RINKEBY_RPC_URL = "https://rinkeby.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
-    public static final String KOVAN_RPC_URL = "https://kovan.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
+    public static final String ROPSTEN_RPC_URL = "https://ropsten.infura.io/v3/30f56e835009477f967be5bbea3e69ad";
+    public static final String RINKEBY_RPC_URL = "https://rinkeby.infura.io/v3/30f56e835009477f967be5bbea3e69ad";
+    public static final String KOVAN_RPC_URL = "https://kovan.infura.io/v3/30f56e835009477f967be5bbea3e69ad";
     public static final String SOKOL_RPC_URL = "https://sokol.poa.network";
-    public static final String GOERLI_RPC_URL = "https://goerli.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
+    public static final String GOERLI_RPC_URL = "https://goerli.infura.io/v3/30f56e835009477f967be5bbea3e69ad";
     public static final String ARTIS_SIGMA1_RPC_URL = "https://rpc.sigma1.artis.network";
     public static final String ARTIS_TAU1_RPC_URL = "https://rpc.tau1.artis.network";
     public static final String BINANCE_TEST_RPC_URL = "https://data-seed-prebsc-1-s3.binance.org:8545";
@@ -62,10 +62,10 @@ public abstract class EthereumNetworkBase { // implements EthereumNetworkReposit
     public static final String OPTIMISTIC_MAIN_URL = "https://mainnet.optimism.io";
     public static final String OPTIMISTIC_TEST_URL = "https://kovan.optimism.io";
     public static final String CRONOS_TEST_URL = "http://cronos-testnet.crypto.org:8545";
-    public static final String ARBITRUM_RPC_URL = "https://arbitrum-mainnet.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
-    public static final String ARBITRUM_TEST_RPC_URL = "https://arbitrum-rinkeby.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
-    public static final String PALM_RPC_URL = "https://palm-mainnet.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
-    public static final String PALM_TEST_RPC_URL = "https://palm-testnet.infura.io/v3/da3717f25f824cc1baa32d812386d93f";
+    public static final String ARBITRUM_RPC_URL = "https://arbitrum-mainnet.infura.io/v3/30f56e835009477f967be5bbea3e69ad";
+    public static final String ARBITRUM_TEST_RPC_URL = "https://arbitrum-rinkeby.infura.io/v3/30f56e835009477f967be5bbea3e69ad";
+    public static final String PALM_RPC_URL = "https://palm-mainnet.infura.io/v3/30f56e835009477f967be5bbea3e69ad";
+    public static final String PALM_TEST_RPC_URL = "https://palm-testnet.infura.io/v3/30f56e835009477f967be5bbea3e69ad";
   
     static Map<Long, NetworkInfo> networkMap = new LinkedHashMap<Long, NetworkInfo>() {
         {
